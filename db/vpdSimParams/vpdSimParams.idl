@@ -1,0 +1,19 @@
+/* vpdSimParams.idl
+*
+* Table: vpdSimParams
+*
+* description: Simulation Parameters for use in StVPDSimMaker
+*
+* author: Nickolas Luttrell (Rice University)
+*
+*/
+
+struct vpdSimParams{
+short tubeRes[38];     /* Single Tube Resolutions for Vpd tubes in picoseconds*/
+octet tubeID[38];       /* Vpd Tube ID, values of 0-37 */
+octet tubeStatusFlag[38];   /* Flag for whether tube was active (True) or not (False) */
+octet tubeTriggerFlag[38];  /* Flag for whether tube was triggered on (True) or not (False) */
+
+};
+
+/* End vpdSimParams.idl */
